@@ -59,6 +59,101 @@
 
 <script>
 
+  const keys = document.querySelectorAll('.key');
+  const audioList = document.querySelectorAll('audio');
+
+  const A = 65;
+  const S = 83;
+  const D = 68;
+  const F = 70;
+  const G = 71;
+  const H = 72;
+  const J = 74;
+  const K = 75;
+  const L = 76;
+
+
+  document.addEventListener('keydown', (e) => {
+    switch (e.keyCode)
+    {
+      case A:
+        keys[0].classList.add('playing');
+        audioList[0].currentTime = 0;
+        audioList[0].play();
+        setTimeout(() => {
+          keys[0].classList.remove('playing');
+        }, 100);
+        break;
+      case S:
+        keys[1].classList.add('playing');
+        audioList[1].currentTime = 0;
+        audioList[1].play();
+        setTimeout(() => {
+          keys[1].classList.remove('playing');
+        }, 100);
+        break;
+      case D:
+        keys[2].classList.add('playing');
+        audioList[2].currentTime = 0;
+        audioList[2].play();
+        setTimeout(() => {
+          keys[2].classList.remove('playing');
+        }, 100);
+        break;
+      case F:
+        keys[3].classList.add('playing');
+        audioList[3].currentTime = 0;
+        audioList[3].play();
+        setTimeout(() => {
+          keys[3].classList.remove('playing');
+        }, 100);
+        break;
+      case G:
+        keys[4].classList.add('playing');
+        audioList[4].currentTime = 0;
+        audioList[4].play();
+        setTimeout(() => {
+          keys[4].classList.remove('playing');
+        }, 100);
+        break;
+      case H:
+        keys[5].classList.add('playing');
+        audioList[5].currentTime = 0;
+        audioList[5].play();
+        setTimeout(() => {
+          keys[5].classList.remove('playing');
+        }, 100);
+        break;
+      case J:
+        keys[6].classList.add('playing');
+        audioList[6].currentTime = 0;
+        audioList[6].play();
+        setTimeout(() => {
+          keys[6].classList.remove('playing');
+        }, 100);
+        break;  
+      case K:
+        keys[7].classList.add('playing');
+        audioList[7].currentTime = 0;
+        audioList[7].play();
+        setTimeout(() => {
+          keys[7].classList.remove('playing');
+        }, 100);
+        break;
+      case L:
+        keys[8].classList.add('playing');
+        audioList[8].currentTime = 0;
+        audioList[8].play();
+        setTimeout(() => {
+          keys[8].classList.remove('playing');
+        }, 100);
+        break;
+      default: 
+        break;
+    }
+});
+
+
 </script>
 
 
